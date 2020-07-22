@@ -1,0 +1,19 @@
+{
+      "@id":"dtmi:smartdatamodels:agri:AgriSoil;1",
+      "@type":"Interface",
+      "displayName":"Agri Soil",
+      "extends":"dtmi:smartdatamodels:base:Thing;1",
+      "@context":"dtmi:dtdl:context;2",
+      "contents":[
+         {
+            "@type":"Property",
+            "name":"description",
+            "schema":"string"
+         },
+         {
+            "@type":"Relationship",
+            "name":"hasAgriProductType",
+            "target":"dtmi:smartdatamodels:agri:AgriProductType;1"
+         }
+      ]
+   }

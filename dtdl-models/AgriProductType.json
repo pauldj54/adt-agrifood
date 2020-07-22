@@ -1,0 +1,19 @@
+{
+      "@id":"dtmi:smartdatamodels:agri:AgriProductType;1",
+      "@type":"Interface",
+      "displayName":"Agri Produc Type",
+      "extends":"dtmi:smartdatamodels:base:Thing;1",
+      "@context":"dtmi:dtdl:context;2",
+      "contents":[
+         {
+            "@type":"Property",
+            "name":"category",
+            "schema":"string"
+         },
+         {
+            "@type":"Property",
+            "name":"description",
+            "schema":"string"
+         }
+      ]
+   }
