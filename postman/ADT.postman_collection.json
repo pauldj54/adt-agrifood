@@ -1,0 +1,521 @@
+{
+	"info": {
+		"_postman_id": "c9317d19-3bc7-42c1-94ba-ef6868ecd50c",
+		"name": "ADT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADT List Twin Models",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c1cb16dc-ace3-4117-a5d5-4f9952603903",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{accessToken}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{adtInstanceURL}}/models?api-version=2020-05-31-preview",
+					"protocol": "https",
+					"host": [
+						"{{adtInstanceURL}}"
+					],
+					"path": [
+						"models"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2020-05-31-preview"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADT Delete Instance",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a045fc1a-4bbb-4908-a545-9daa337b49ee",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{accessToken}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{adtInstanceURL}}models/dtmi:ems:Substation;1?api-version=2020-05-31-preview",
+					"protocol": "https",
+					"host": [
+						"{{adtInstanceURL}}models"
+					],
+					"path": [
+						"dtmi:ems:Substation;1"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2020-05-31-preview"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADT Get Relationship",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "61d66099-479e-4e0c-9b52-b0c4bae0f943",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{accessToken}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{adtInstanceURL}}/_8c8fb43e-a173-11ea-b2c9-acfdce2a8c3f/relationships?api-version=2020-05-31-preview",
+					"protocol": "https",
+					"host": [
+						"{{adtInstanceURL}}"
+					],
+					"path": [
+						"_8c8fb43e-a173-11ea-b2c9-acfdce2a8c3f",
+						"relationships"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2020-05-31-preview"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADT Upload Model",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "80c62a2d-8446-4adf-8ad8-385b0efbac33",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{accessToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{adtInstanceURL}}/models?api-version=2020-05-31-preview",
+					"protocol": "https",
+					"host": [
+						"{{adtInstanceURL}}"
+					],
+					"path": [
+						"models"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2020-05-31-preview"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADT Create Instance",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "a1cec872-09f8-4940-93de-200d06b4675b",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{accessToken}}"
+					},
+					{
+						"key": "If-None-Match",
+						"value": "*",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{adtInstanceURL}}/digitaltwins/_8c8f6634-a173-11ea-9c7f-acfdce2a8c3f?api-version=2020-05-31-preview",
+					"protocol": "https",
+					"host": [
+						"{{adtInstanceURL}}"
+					],
+					"path": [
+						"digitaltwins",
+						"_8c8f6634-a173-11ea-9c7f-acfdce2a8c3f"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2020-05-31-preview"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADT List Instances",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "3b18666f-377d-4582-88c5-b5c097a3fd77",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{accessToken}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"$dtId\": \"_8c8f6634-a173-11ea-9c7f-acfdce2a8c3f\",\r\n    \"$metadata\": { \"$model\": \"dtmi:citygraph:ems:SubGeographicalRegion;1\"},\r\n    \"ID\": \"_8c8f6634-a173-11ea-9c7f-acfdce2a8c3f\",\r\n    \"name\": \"Test-SubRegion\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{adtInstanceURL}}/digitaltwins/?api-version=2020-05-31-preview",
+					"protocol": "https",
+					"host": [
+						"{{adtInstanceURL}}"
+					],
+					"path": [
+						"digitaltwins",
+						""
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2020-05-31-preview"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADT Create Relationship",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fbd30275-74a5-4a3c-a078-909e3ec23a0d",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{accessToken}}"
+					},
+					{
+						"key": "If-None-Match",
+						"type": "text",
+						"value": "*"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{adtInstanceURL}}/_8c8fb43e-a173-11ea-b2c9-acfdce2a8c3f/relationships/_EAEBACC7E6324BBA98C85BC95FC9A7FF?api-version=2020-05-31-preview",
+					"protocol": "https",
+					"host": [
+						"{{adtInstanceURL}}"
+					],
+					"path": [
+						"_8c8fb43e-a173-11ea-b2c9-acfdce2a8c3f",
+						"relationships",
+						"_EAEBACC7E6324BBA98C85BC95FC9A7FF"
+					],
+					"query": [
+						{
+							"key": "api-version",
+							"value": "2020-05-31-preview"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Consent request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://login.microsoftonline.com/{{tenantId}}/adminconsent?client_id={{clientId}}&state=12345&redirect_uri=https://www.getpostman.com/oauth2/callback",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"{{tenantId}}",
+						"adminconsent"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "{{clientId}}"
+						},
+						{
+							"key": "state",
+							"value": "12345"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://www.getpostman.com/oauth2/callback"
+						}
+					]
+				},
+				"description": "Replace {tenant} with either `common` or a tenant ID.  You should replace the client ID here as well as in the Client Credentials request so that you are giving your own app permissions.  This tutorial app has no requested application permissions, so giving this app consent won't give it any permissions in your tenant."
+			},
+			"response": [
+				{
+					"name": "Admin authorization request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://login.microsoftonline.com/{tenant}/adminconsent?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&state=12345&redirect_uri=http://localhost/myapp/permissions",
+							"protocol": "https",
+							"host": [
+								"login",
+								"microsoftonline",
+								"com"
+							],
+							"path": [
+								"{tenant}",
+								"adminconsent"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "6731de76-14a6-49ae-97bc-6eba6914391e"
+								},
+								{
+									"key": "state",
+									"value": "12345"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "http://localhost/myapp/permissions"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [],
+					"body": "http://localhost/myapp/permissions?tenant={tenant}&state=state=12345&admin_consent=True"
+				}
+			]
+		},
+		{
+			"name": "request service to service token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fa4d6b68-b167-432d-b1d9-976d061ca94d",
+						"exec": [
+							"var json = JSON.parse(responseBody);\r",
+							"\r",
+							"pm.environment.set(\"AccessToken\", json.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "scope ",
+							"value": "https://digitaltwins.azure.net/Read.Write",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/{{tenantId}}/oauth2/v2.0/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"{{tenantId}}",
+						"oauth2",
+						"v2.0",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

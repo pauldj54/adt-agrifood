@@ -1,0 +1,68 @@
+with strings and date
+
+CreateDigitalTwin dtmi:trans:EVChargingStation;1 ev-cs-Maria-Tusch-Str-1 ID string ev-cs-Maria-Tusch-Str-1 name string ev-cs-Maria-Tusch-Str-1 address string "Maria-Tusch-Str 21 1220 Wien" capacity string "30 KW" allowedVehicleType string "car, caravan, truck" socketType string "Type2" dateCreated datetime 2020-06-04T08:48:36Z dateModified datetime 2020-06-04T08:48:36Z
+
+with strings and datetime
+CreateDigitalTwin dtmi:trans:EVChargingStation;1 ev-cs-Maria-Tusch-Str-1 ID string ev-cs-Maria-Tusch-Str-1 name string ev-cs-Maria-Tusch-Str-1 address string "Maria-Tusch-Str 21 1220 Wien" capacity string "30 KW" allowedVehicleType string "car, caravan, truck" socketType string "Type2" dateCreated datetime 2020-06-04T08:48:36Z dateModified datetime 2020-06-04T08:48:36Z
+
+with arrays and datatime
+CreateDigitalTwin dtmi:trans:EVChargingStation;1 ev-cs-Maria-Tusch-Str-1 ID string ev-cs-Maria-Tusch-Str-1 name string ev-cs-Maria-Tusch-Str-1 address string "Maria-Tusch-Str 21 1220 Wien" capacity string "30 KW" allowedVehicleType Array ["car", "caravan", "truck"] socketType Array ["Type2"] dateCreated datetime 2020-06-04T08:48:36Z dateModified datetime 2020-06-04T08:48:36Z
+
+state Enum 1
+
+
+{
+  "createdTime": "2020-06-30T09:51:28.018592+00:00",
+  "hostName": "myazdtph300620.api.neu.digitaltwins.azure.net",
+  "id": "/subscriptions/da05ac29-8f4c-4a13-8c3e-43b5a925aba3/resourceGroups/azdtpreview/providers/Microsoft.DigitalTwins/digitalTwinsInstances/myazdtph300620",
+  "lastUpdatedTime": "2020-06-30T09:51:40.153052+00:00",
+  "location": "northeurope",
+  "name": "myazdtph300620",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "azdtpreview",
+  "tags": null,
+  "type": "Microsoft.DigitalTwins/digitalTwinsInstances"
+}
+
+ "userPrincipalName": "pauldj54_hotmail.com#EXT#@pauldj54hotmail.onmicrosoft.com"
+ 
+ "objectId": "d7e7309c-1930-4f48-beb3-63d17c7aec2a"
+ 
+ Application (client) ID : 7bd893a7-9990-4097-b8a6-ac8b4ce18af1
+ Directory (tenant) ID : 6005dfb1-84f6-4005-8ae1-77f26eb7aac7
+ 
+ 
+ https://digitaltwins.azure.net/.default
+ {Azure.Core.Pipeline.HttpPipeline}
+ 
+ GET /6005dfb1-84f6-4005-8ae1-77f26eb7aac7/oauth2/v2.0/authorize?scope=https%3A%2F%2Fdigitaltwins.azure.net%2F.default+offline_access+openid+profile&response_type=code&client_id=7bd893a7-9990-4097-b8a6-ac8b4ce18af1&redirect_uri=http%3A%2F%2Flocalhost%3A59623&client-request-id=fa921501-7839-478f-9467-228078815428&x-client-SKU=MSAL.NetCore&x-client-Ver=4.1.0.0&x-client-OS=Microsoft+Windows+10.0.17134&prompt=select_account&code_challenge=f4z1NBkoAEVbaUIeEh4IMj70i9ZcL9ZHUV_9_k8xd30&code_challenge_method=S256&state=e8a2e602-39eb-4598-bf18-c0219611cc3c309d3be5-d601-4987-b86d-eca1393e9ff2 HTTP/1.1
+ 
+ GET 
+ token endpoint
+ /6005dfb1-84f6-4005-8ae1-77f26eb7aac7/
+ oauth2/v2.0/authorize?
+scope=https://digitaltwins.azure.net/.default
++offline_access+openid+profile
+&response_type=code
+&client_id=7bd893a7-9990-4097-b8a6-ac8b4ce18af1
+&redirect_uri=http://localhost/59623
+&client-request-id=fa921501-7839-478f-9467-228078815428
+&x-client-SKU=MSAL.NetCore
+&x-client-Ver=4.1.0.0
+&x-client-OS=Microsoft+Windows+10.0.17134
+&prompt=select_account
+&code_challenge=f4z1NBkoAEVbaUIeEh4IMj70i9ZcL9ZHUV_9_k8xd30
+&code_challenge_method=S256&state=e8a2e602-39eb-4598-bf18-c0219611cc3c309d3be5-d601-4987-b86d-eca1393e9ff2 
+HTTP/1.1
+ 
+ https://login.microsoftonline.com/6005dfb1-84f6-4005-8ae1-77f26eb7aac7/reprocess?ctx=rQIIAX2RP2_TQADFc3HahqiCCInSCSLUoQKdc-c_57sgkNLQJpSGkqYKDUt1Pp9jC8uO4gtJM8HGgooQEyNjpooFxEfI1BHxARDqxIiYSHbE8qS3PP3ee4UVS8c60tFtzdBRZcNxPcpM7kDGGIIWYg50KSeQC-paQmLKfTy4WiiCa-_-sPFp_X3v1svxq8PNKbgeKNWvlMtRIngUJKmq2IwYZvkLAOcA_ATge_bKfnWoAmMhySCcyIvs5VRGUqhjLkQyjNUHrSEpNyRBBjSZdKFlMwpdH1MokIEZwVgIU5iIeaYrbegRhKHF6AKSeFAKjk1mSub7xlS7sQBK50Re2AsVj9QojFOdT4YDqcdSfdI2CEK257sYUssn87LIhpRLDB3HN4h0Hc6FM9O2_59T1j3p82GkSonvR2EsF2VkmpaSvoxDr9QfJH4YyW8aOM-Bi9xaPlcE65lSZnMdaZV8vlDMLNzvHPi4NN91d_XHyZn-pvb59Ob9bnI3O1sqs86zoPP8qGehYFytD0b7WwYxvJ2Hjzp78sXuRDTbNcTdfkvR6j1UwW-XwWx5tdmu7umPpaolA_lrGbxeyXy9tPbvh6aFO_GDgyPY2LEpSeVBM9k67ioncduNWJpmF9XTk9YoQAQ9fbLdOiuAvw2&sessionid=ba6d3ff0-31eb-4fa1-9617-0251bdecc71c&sso_nonce=AQABAAAAAAAGV_bv21oQQ4ROqh0_1-tAt3DNv07ORL-WMvRta6dx9hNRb5TAro3ZAUWUnc3AxMiHUrVtiU3KAOGcE6kZeF2HmH18YICQd6NK_fL7JX7msSAA&client-request-id=fa921501-7839-478f-9467-228078815428&mscrid=fa921501-7839-478f-9467-228078815428
+
+GET 
+
+/6005dfb1-84f6-4005-8ae1-77f26eb7aac7/reprocess?ctx=rQIIAX2RP2_TQADFc3HahqiCCInSCSLUoQKdc-c_57sgkNLQJpSGkqYKDUt1Pp9jC8uO4gtJM8HGgooQEyNjpooFxEfI1BHxARDqxIiYSHbE8qS3PP3ee4UVS8c60tFtzdBRZcNxPcpM7kDGGIIWYg50KSeQC-paQmLKfTy4WiiCa-_-sPFp_X3v1svxq8PNKbgeKNWvlMtRIngUJKmq2IwYZvkLAOcA_ATge_bKfnWoAmMhySCcyIvs5VRGUqhjLkQyjNUHrSEpNyRBBjSZdKFlMwpdH1MokIEZwVgIU5iIeaYrbegRhKHF6AKSeFAKjk1mSub7xlS7sQBK50Re2AsVj9QojFOdT4YDqcdSfdI2CEK257sYUssn87LIhpRLDB3HN4h0Hc6FM9O2_59T1j3p82GkSonvR2EsF2VkmpaSvoxDr9QfJH4YyW8aOM-Bi9xaPlcE65lSZnMdaZV8vlDMLNzvHPi4NN91d_XHyZn-pvb59Ob9bnI3O1sqs86zoPP8qGehYFytD0b7WwYxvJ2Hjzp78sXuRDTbNcTdfkvR6j1UwW-XwWx5tdmu7umPpaolA_lrGbxeyXy9tPbvh6aFO_GDgyPY2LEpSeVBM9k67ioncduNWJpmF9XTk9YoQAQ9fbLdOiuAvw2&sessionid=ba6d3ff0-31eb-4fa1-9617-0251bdecc71c&sso_nonce=AQABAAAAAAAGV_bv21oQQ4ROqh0_1-tAt3DNv07ORL-WMvRta6dx9hNRb5TAro3ZAUWUnc3AxMiHUrVtiU3KAOGcE6kZeF2HmH18YICQd6NK_fL7JX7msSAA&client-request-id=fa921501-7839-478f-9467-228078815428&mscrid=fa921501-7839-478f-9467-228078815428 HTTP/1.1
+
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSIsImtpZCI6Imh1Tjk1SXZQZmVocTM0R3pCRFoxR1hHaXJuTSJ9.eyJhdWQiOiJodHRwczovL2RpZ2l0YWx0d2lucy5henVyZS5uZXQiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC82MDA1ZGZiMS04NGY2LTQwMDUtOGFlMS03N2YyNmViN2FhYzcvIiwiaWF0IjoxNTk0Mjk3MDc3LCJuYmYiOjE1OTQyOTcwNzcsImV4cCI6MTU5NDMwMDk3NywiYWNyIjoiMSIsImFpbyI6IkFVUUF1LzhRQUFBQS9CNHdGdmxCNDNRaUdsRW5UMDd6MFFLQ0ZjS1pOdm9MUkRzOXptWFAydnZZOGlTVDFZSlVvUzJGRktXcDVjYmsvM1p1eml3azlpc2hyNVdBWU1vN0tRPT0iLCJhbHRzZWNpZCI6IjE6bGl2ZS5jb206MDAwMTQ5NzA1QUEzRkUwOSIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiI3YmQ4OTNhNy05OTkwLTQwOTctYjhhNi1hYzhiNGNlMThhZjEiLCJhcHBpZGFjciI6IjAiLCJlbWFpbCI6InBhdWxkajU0QGhvdG1haWwuY29tIiwiZmFtaWx5X25hbWUiOiJIZXJuYW5kZXoiLCJnaXZlbl9uYW1lIjoiUGF1bCIsImlkcCI6ImxpdmUuY29tIiwiaXBhZGRyIjoiOTMuMjE5Ljg3LjEiLCJuYW1lIjoiUGF1bCBIZXJuYW5kZXoiLCJvaWQiOiJkN2U3MzA5Yy0xOTMwLTRmNDgtYmViMy02M2QxN2M3YWVjMmEiLCJwdWlkIjoiMTAwM0JGRkQ5M0M4MEUwMCIsInNjcCI6IlJlYWQuV3JpdGUiLCJzdWIiOiJnbDI4d1dZaUlxZm1CeTJiazFKbENMTDNDU2tfYWo4RUVFTHRfNkdhY0l3IiwidGlkIjoiNjAwNWRmYjEtODRmNi00MDA1LThhZTEtNzdmMjZlYjdhYWM3IiwidW5pcXVlX25hbWUiOiJsaXZlLmNvbSNwYXVsZGo1NEBob3RtYWlsLmNvbSIsInV0aSI6IlZwNVBDSGlSVVUyc2FrMDFBN1QtQUEiLCJ2ZXIiOiIxLjAifQ.0EK5zNK2oHG9dq1Oha2cABzvhqlqvi6Dy8Ued6V21O46jU6LRc6_lS_nevEjv9TAJ85j17h_9VxEthZ6rkcHa9OIoSB1QN-uZpxZcq4gD6_CE_ZNifG-zjgbUyx9UC5RgaiEMo5wU66ojxkxuPOd2l245kv274IMv12BM9VXqnS-uqFpkl-mCLz7WM_KODghryS6ukVvu4dUdvSiFYpo4DIFjwBgnoAjroZOVST7LT1Um4rc590B_tsfu9e-KbciSi7Adt1hKPcdeUIFMaw0YWdP0oztLO4vh00qSqrbThno0RQTpCXq1fA8TW0-MX_ANCLcJhAkdB8vjcqgc32f-w
+ 
+ 
+
+ 
